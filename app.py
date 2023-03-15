@@ -2,7 +2,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 
-app = Flask(__name__)
+app = Flask(__name__) # THIS FILE NAME SHOULD BE MATCH WITH app PARAMETER IN Procfile
 model = pickle.load(open('model/model.pkl', 'rb'))
 
 
